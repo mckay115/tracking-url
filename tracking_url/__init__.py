@@ -73,5 +73,12 @@ TRACKING_PATTERNS = [
         'http://www.dhl.com/en/express/tracking.html?AWB={tracking_number}&brand=DHL',
         [
             r'^\d{10,11}$'
-        ])
-]
+        ]
+    ),
+    TrackingPattern(
+        'pilot',
+        'http://www.pilotdelivers.com/quicktrack.aspx?Pro={tracking_number}',
+        [
+            r'[0-9]{2}'
+        ]
+    )]
